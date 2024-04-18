@@ -1,0 +1,339 @@
+/* Tablets */
+
+@media  (max-width: 1264px ){
+    .navbar{
+        gap: 10px;
+    }
+
+
+
+    .navbar-list{
+        position: absolute;
+        top: 105px;
+        width: 90%;
+
+        
+        flex-direction: column;
+        background-color: var(--background-body);
+        border-top: 0px;
+        border-radius: 0px 0px 15px 15px;
+        align-items: flex-start;
+
+
+        padding: 0px 30px 20px 30px;
+        gap: 25px;
+        z-index: 2;
+        display: none;
+    }
+
+    
+    .navbar-list a{
+        font-size: 18px;
+    }
+
+    .cart-bubble {
+        position: absolute;
+        top: 34px;
+        right: 243px;
+ 
+    }
+
+    .open-menu{
+        display: flex;
+    }    
+
+    .menu-label{
+        display: flex;
+        order: 2;
+        cursor: pointer;
+        padding: 15px;
+
+    }
+
+
+    .menu-label img{
+        width: 35px;
+        height: 20px;
+        
+    }
+
+    #menu-toggle:checked + .navbar-list{
+        display: flex;
+        
+    }
+
+    .logo{
+        width: auto;
+
+    }
+
+    #hero{
+
+        background-image: url(./assets/background-img.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        padding: 130px 0;
+
+    }
+
+    .hero-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #info-temporada{
+        font-size: 10pt;
+    }
+
+    .hero-info h1{
+        font-size: 35pt;
+        line-height: 40px;
+        margin: 20px 0px 35px 0px;
+
+    }
+
+    #info-texto{
+        font-size: 12pt;
+        line-height: 15px;
+    }
+
+    .hero-info a{
+        margin: 30px 0px;
+
+    }
+
+
+
+
+    .info-cards-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .info-title{
+        padding: 30px 0;
+        font-size: 20pt;
+    }
+
+    .info-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0px;
+        border-radius: 30px;
+        background-color: var(--background-lg);
+    }
+ 
+    /* PRODUCTS*/
+    #products{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-image: url(./assets/fondo-blanco.png);
+        background-size: 2000px 1000px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-position: 0px 200px;
+        padding: 100px;
+    }
+    
+    .products-title{
+        color: var(--text-white);
+        padding: 30px 0px 0px 0px;
+        font-size: 20pt;
+    }
+
+    .categories{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15pt;
+        background: var(--background-grey-category);
+        margin: 10px 0px;
+        gap: 10px;
+        font-size: 10pt;
+        width: 360px;
+        height: 40px;
+    }
+
+    .category{
+        padding: 0px 30px 0px 0px;
+        color: var(--bg-blackgrey);
+    }
+
+    .category-active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--text-white);
+
+        padding: 9px 20px;
+        color: var(--text-red);
+        font-weight: 600;
+    
+    }
+
+    .btn-load{
+        color: var(--text-white);
+        padding: 8px 40px;
+        font-size: 10pt;
+        background: var(--text-red);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+
+    /* ABOUT US*/
+
+
+    #about-us{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url(./assets/fondo-blanco.png);
+        background-size: 2000px 500px;
+        background-repeat: no-repeat;
+        padding: 10px 0;
+
+    }
+
+
+
+
+    .img-aboutus-one, .img-aboutus-two, .img-aboutus-three{
+        display: none;
+    }
+
+    .discover-cards{
+        display: none;
+    }
+
+
+    
+
+ 
+    .about-us-info h2{
+        font-size: 25pt;
+        text-align: center;
+    }
+    
+    .detalle-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .detalle-info p{
+        margin: 0px 0 200px 0 ;
+        
+        font-size: 13pt;
+        padding: 30px 60px 50px 60px;
+    }
+    
+
+
+    .detalle-info a{
+        padding: 14px 30px;
+        font-size: 10pt;
+        
+    }
+
+    .about-us-info{
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        background: var(--background-body);
+        box-shadow: 24px 25px 22px rgba(0, 0, 0, 0.25);
+        padding: 2px 0px;
+        color: var(--text-white);
+    }
+    
+    
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 35px 0 0px 0;
+    }
+
+    .contacto h2{
+        padding: 0px 0px;
+        color: var(--text-red);
+        font-size: 30pt;
+    }
+
+    .formulario-contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-input-contact{
+        width: 400px;
+        background: none;
+        color: var(--text-white);
+        padding: 15px;
+        border: none;
+        outline: none;
+        border-bottom: 3px solid var(--text-white);
+    
+    }
+
+    #form-mensaje{
+        width: 400px;
+    }
+
+    .input-submit-contact{
+        color: var(--background-body);
+        margin: 80px;
+        padding: 10px 35px;
+        font-size: 12pt;
+        background: var(--background-grey-category);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    
+    
+    .input-submit-contact:hover{
+        background: var(--text-red);
+        color: var(--text-white);
+        box-shadow: 0px 0px 27px 20px rgba(118, 0, 0, 0.5);
+        font-weight: 600;
+    }
+
+
+
+    
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

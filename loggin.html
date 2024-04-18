@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loggin</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./loggin.html">
+    <link rel="stylesheet" href="./signup.html">
+</head>
+<body>
+    <header>
+        <img src="./assets/logo.svg" alt="logo" class="logo">
+        <nav class="navbar">
+            <div class="menu-label">
+                <img src="" alt="">
+            </div>
+
+        </nav>
+
+        <ul class="navbar-list" >
+            <li><a class="navbar-link" href="http://127.0.0.1:3000/index.html">HOME</a></li>
+            <li><a class="navbar-link" href="http://127.0.0.1:3000/index.html#info">GARANTIAS</a></li>
+            <li><a class="navbar-link" href="http://127.0.0.1:3000/index.html#products">PRODUCTOS</a></li>
+            <li><a class="navbar-link" href="http://127.0.0.1:3000/index.html#about-us">SOBRE NOSOTROS</a></li>
+            <li><a class="navbar-link" href="http://127.0.0.1:3000/index.html#contact">CONTACTANOS</a></li>
+        </ul>
+
+        <div class="cart-label">
+            <i class="fa-solid fa-cart-shopping cart-icon">
+                <div class="cart-bubble">0</div>
+                <div class="icon-navbar">
+                    <img src="./assets/Carro-icon.png" alt="" class="icon-navbar-carro">
+                    <img src="./assets/email-icon.png" alt="" class="icon-navbar-email">
+                    <img src="./assets/profile-icon.png" alt="" class="icon-navbar-profile">
+                </div>
+            </i>
+        </div>
+
+    </header>
+
+    <main>
+        <section id="loggin">
+            <div class="loggin-contenedor">
+                <div class="loggin-info">
+                    <form action="" class="form login">
+                        <h1>INICIAR SESIÓN</h1>
+                        <div class="form-container-login">
+                            <div class="formulario-detalle">                                
+                                <input type="text" id="username" required placeholder="Nombre de usuario" class="form-input">
+                            </div>
+                            <div class="formulario-detalle">
+                                <input type="password" id="password" required placeholder="Contraseña" class="form-input">
+                            </div>
+                            <div class="container-login">
+                                <span class="login-info-contraseña">¿Olvidaste tu contraseña?</span>
+                            </div>
+                            <input type="submit" class="input-submit" value="INICIAR SESIÓN">
+                            <div class="container-login">
+                                <p class="login-info-text">¿No tienes cuenta?
+                                    <button  onclick="location.href='http://127.0.0.1:3000/signup.html'">
+                                        <a href="#"><span>Create una</span></a>
+                                    </button> 
+                                </p>
+                            </div>
+                            <div class="separador-botones">
+                                <span class="linea3"></span>
+                                <span class="o">O</span>
+                                <span class="linea4"></span>
+                            </div>
+                            <div class="form-submit-button" id="google">
+                                <img src="./assets/logogoogle.png" alt="" class="logo-boton">
+                                <input type="submit" class="boton-google"  value="Continua con Google">                    
+                            </div>
+                            <div class="form-submit-button" id="facebook">
+                                <img src="./assets/logofacebook.png" alt="" class="logo-boton">
+                                <input type="submit" class="boton-facebook"  value="Continua con Facebook">
+                            </div>                      
+                        </div>
+                    </form>
+                </div>
+                <diiv class="elementos">
+                    <span class="cuadrado-tres"></span>
+                    <span class="cuadrado-cuatro"></span>
+                </diiv>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div>
+            <ul class="footer-links">
+              <li><a href="#">Términos de Uso</a></li>
+              <li><a href="#">Trabajá con Nosotros</a></li>
+              <li><a href="#">Soporte</a></li>
+            </ul>
+          </div>
+          <p>CREATED BY <span>GONZAN</span></p>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script src="./data.js"></script> 
+
+    
+</body>
+</html>

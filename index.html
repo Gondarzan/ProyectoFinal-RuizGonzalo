@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox Extrem</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaqueries.css">
+    <link rel="stylesheet" href="./signup.html">
+    <link rel="stylesheet" href="./loggin.html">
+</head>
+<body>
+
+    <header>
+        <img src="./assets/logo-foxex.png" alt="logo" class="logo">
+        <nav class="navbar">
+
+            <div class="menu-label">
+                <img src="./assets/menu.png"alt="icono menu" class="menu-icon">
+            </div>
+
+            <ul class="navbar-list" >
+                <li><a class="navbar-link" href="#home">HOME</a></li>
+                <li><a class="navbar-link" href="#info">GARANTIAS</a></li>
+                <li><a class="navbar-link" href="#products">PRODUCTOS</a></li>
+                <li><a class="navbar-link" href="#about-us">SOBRE NOSOTROS</a></li>
+                <li><a class="navbar-link" href="#contact">CONTACTANOS</a></li>
+            </ul>    
+            
+            <div class="cart-label">
+                    <div class="icon-navbar">                    
+                        <label for="" class="cart-icon">
+                            <div class="cart-bubble">0</div>
+                            <img src="./assets/Carro-icon.png" alt="" class="icon-navbar-carro">
+                        </label>
+                        <label for="" class="email">
+                            <img src="./assets/email-icon.png" alt="" class="icon-navbar-email">
+                        </label>
+                        <label for="" class="profile">
+                            <button onclick="location.href='http://127.0.0.1:3000/signup.html' ">
+                                <img src="./assets/profile-icon.png"  alt="" class="icon-navbar-profile" >                        
+                            </button>
+                        </label>
+                        <input type="checkbox" id="icon-label" class="input-check">
+                    </div>                  
+            </div>
+
+            <div class="cart">
+                <h2>Tu compra</h2>      
+                <div class="cart-container"></div>      
+                <span class="divider"></span>      
+                <div class="cart-total">
+                  <p>Total:</p>
+                  <span class="total"></span>
+                </div>
+                <button class="btn-buy">Comprar</button>
+                <button class="btn-delete">Vaciar carrito</button>
+            </div>  
+            <div class="overlay"></div>          
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="hero">
+            <div class="hero-info">
+                <p id="info-temporada" >INGRESO VERANO 2023</p>
+                <h1>THE FEELING<br>
+                    OF ADVENTURE</h1>
+                <p id="info-texto" >Guiando al camino correcto<br> 
+                    en este 2023, te contamos que todo<br>
+                    esta en los accesorios</p>
+                <a href="#">VER PRODUCTO</a>
+            </div>
+        </section>
+
+
+        <section id="info">
+            <h2 class="info-title">GARANTIA ASEGURADA</h2>
+            <div class="info-cards-container">
+                <div class="info-card">
+                    <img src="./assets/block-icon.png" alt="" id="block-img">
+                    <h3>COMPRA SEGURA</h3>
+                    <p></p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/credit-card.png" alt="" id="credit-card-img">
+                    <h3>3 Y 6 CUOTAS SIN INTERES</h3>
+                    <p></p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/car-icon.png" alt="" id="car-img">
+                    <h3>ENVIOS SIN CARGO</h3>
+                    <p></p>
+                </div>
+            </div>
+ 
+        </section>
+
+        <section id="products">
+            <h2 class="products-title">PRODUCTOS FOX</h2>
+            <div class="categories">
+              <button class="category active">TODOS</button>
+              <button class="category" data-category="MOTO">MOTO</button>
+              <button class="category" data-category="MTB">MTB</button>
+              <button class="category" data-category="LFT">LFT</button>
+              <button class="category" data-category="SHIFT">SHIFT</button>
+            </div>
+
+            <div class="contain-product">
+                <div class="products-container"></div>
+                <button class="btn-load">Ver Más</button>
+            </div>
+        </section>
+
+        <section id="about-us">
+            <div class="about-us-info">
+                <h2>TE CONTAMOS<br>
+                    UN POCO DE NOSOTROS</h2>
+                <div class="detalle-info">
+                    <p>La marca FOX es la marca de motocross lider y con mayores ventas<br> mundiales hasta el día de hoy.</p>
+                    <a href="#">ENTERATE PORQUE</a>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <div class="contacto">
+                <h2>CONTACTANOS</h2>
+                <form action="" class="contact-form">
+                    <div class="formulario-contact">
+                        <div class="formulario-detalle-contact">
+                            <label for="name" class="form-label-contact">Nombre</label>
+                            <input type="text" id="name" required placeholder="Escribe tu nombre aqui" class="form-input-contact">   
+                        </div>
+                        <div class="formulario-detalle-contact">
+                            <label for="lastnam" class="form-label-contact">Apellido</label>
+                            <input type="text" id="lastname" required placeholder="Escribe tu apellido aqui" class="form-input-contact">   
+                        </div>
+    
+                        <div class="formulario-detalle-contact">
+                            <label for="mail" class="form-label-contact">Email</label>
+                            <input type="email" id="mail" required placeholder="Escribe tu email aqui" class="form-input-contact">   
+                        </div>        
+                    </div>
+                    <div class="formulario-detalle-contact">
+                        <label for="text" class="form-label-contact">Mensaje</label> 
+                        <textarea name="" id="form-mensaje" cols="10" rows="2" class="form-input-contact"></textarea>  
+                    </div>
+                    <input type="submit" class="input-submit-contact" value="ENVIAR"> 
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div>
+            <ul class="footer-links">
+              <li><a href="#">Términos de Uso</a></li>
+              <li><a href="#">Trabajá con Nosotros</a></li>
+              <li><a href="#">Soporte</a></li>
+            </ul>
+          </div>
+          <p>CREATED BY <span>GONZAN</span></p>
+    </footer>
+
+    <div class="add-modal"></div>
+    <script src="./js/data.js" ></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
